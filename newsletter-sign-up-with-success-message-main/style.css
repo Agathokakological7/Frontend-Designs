@@ -1,0 +1,178 @@
+/* Your other styles for the container and newsletter box */
+.body{
+    background-color: hsl(235, 18%, 26%) ;
+}
+.container {
+    position: relative;
+    background-color: hsl(235, 18%, 26%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center-box {
+    width: 50%;
+    max-width: 800px;
+    border-radius: 60%;
+  }
+  
+  .newsletter-box {
+    display: flex;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  /* Styles for the newsletter content */
+  .newsletter-content {
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .newsletter-content h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-content p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .newsletter-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0;
+  }
+  
+  .newsletter-content li {
+    font-size: 14px;
+    color: #555;
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  .newsletter-content li i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #2ecc71;
+  }
+  
+  #newsletter-form {
+    margin-top: 20px;
+  }
+  
+  #newsletter-form label {
+    display: block;
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 5px;
+    font-weight: 1900;
+    font-weight: 550;
+    
+  }
+  
+  #newsletter-form input {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  #newsletter-form button {
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adding transition effect */
+  }
+  
+  /* Styles for the button hover */
+  #newsletter-form button:hover {
+    background-color:hsl(4, 100%, 67%); /* Change the background color on hover */
+  }
+  
+  /* Styles for the newsletter image */
+  .newsletter-image {
+    margin-left: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newsletter-image img {
+    max-width: 85%;
+    height: 600%;
+    border-radius: 0%;
+     /* Optional: Add a border-radius to the image */
+  }
+  .newsletter-content .custom-bullet {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .newsletter-content .custom-bullet::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px; /* Adjust the width of the bullet point image */
+    height: 15px; /* Adjust the height of the bullet point image */
+    background-image: url('assets/images/icon-list.svg'); /* Replace with your image path */
+    background-size: cover;
+  }
+
+  /* Your other styles for the container and newsletter box */
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('assets/fonts/Roboto-Bold.ttf') format('woff2'),
+        
+         url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+    /* Add additional font formats if necessary */
+    /* For example, you can add the .otf format: */
+    /* url('path/to/your/font.otf') format('opentype'); */
+    /* Be sure to replace 'YourFontName' and the font file paths with the correct names and paths */
+  }
+  
+  
+  
+  /* Add the font-family to the relevant elements */
+  .center-box,
+  .newsletter-box,
+  .newsletter-content h2,
+  .newsletter-content p,
+  .newsletter-content li,
+  #newsletter-form label,
+  #newsletter-form input,
+  #newsletter-form button {
+    font-family: 'Roboto', sans-serif;
+    /* Replace 'YourFontName' with the name you specified in the @font-face rule */
+    /* Use the fallback font 'sans-serif' in case the custom font fails to load */
+  }
+  @media (max-width: 767px) {
+    .center-box {
+      width: 100%;
+    }
+  
+    .newsletter-box {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .newsletter-image {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
