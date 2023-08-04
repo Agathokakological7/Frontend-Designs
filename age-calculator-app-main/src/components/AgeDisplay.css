@@ -1,0 +1,54 @@
+/* AgeDisplay.css */
+.age-display {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .age-display div {
+    text-align: center;
+  }
+  
+  .age-display p {
+    width: 250px;
+    color: #000;
+font-family: Poppins;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: 100    px; /* 120.471% */
+  }
+  
+  .age-display span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+  }
+  /* AgeDisplay.css */
+.age-display {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .age-display div {
+    text-align: center;
+  }
+  
+  .age-display p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .age-display .age-value {
+    color: rgb(111, 58, 236); /* Apply violet color to the age value */
+  }
+  
+  .age-display .unit-text {
+    display: block;
+    font-size: 14px;
+    color: #000; /* Apply black color to the unit text */
+  }
+  
+  

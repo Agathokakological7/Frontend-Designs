@@ -1,0 +1,98 @@
+/* AgeCalculator.css */
+.centered-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 832px;
+  height: 682px;
+  flex-shrink: 0;
+  border-radius: 24px 24px 192px 24px;
+background: #FFF;
+}
+
+
+
+
+h2 {
+  /* Your h2 styles here */
+  text-align: center;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  /* Your label styles here */
+}
+
+input[type="number"] {
+  /* Your input styles here */
+  width: 166px;
+height: 80px;
+flex-shrink: 0;
+border-radius: 7px;
+border: 1px solid #DBDBDB;
+background: #FFF;
+}
+
+button {
+  /* Your button styles here */
+  margin-top: 10px;
+  width: 88px;
+height: 88px;
+flex-shrink: 0;
+background: #854DFF;
+}
+
+.age-display {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.age-display div {
+  text-align: center;
+}
+
+.age-display p {
+  margin: 0;
+}
+input[type="number"] {
+  /* Your input styles here */
+  width: 70px; /* Adjust the width as per your preference */
+  height: 35px; /* Adjust the height as per your preference */
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.age-display span {
+  display: block;
+  font-size: 14px;
+}
